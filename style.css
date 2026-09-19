@@ -1,0 +1,455 @@
+/* ===== Basic Reset ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9ff;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* ===== Navigation ===== */
+
+header {
+    background: white;
+    padding: 18px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #5b4bdb;
+    font-size: 25px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #5b4bdb;
+}
+
+
+/* ===== Hero Section ===== */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #eeeaff, #f8f9ff);
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.small-title {
+    color: #5b4bdb;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #5b4bdb;
+    color: white;
+    padding: 13px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #4536b5;
+}
+
+
+/* ===== Common Section ===== */
+
+section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.section-text {
+    color: #666;
+    margin-bottom: 35px;
+}
+
+
+/* ===== Resource Cards ===== */
+
+.resource-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.resource-card {
+    background: white;
+    width: 280px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.resource-card:hover {
+    transform: translateY(-8px);
+}
+
+.resource-card h3 {
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+.resource-card p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.resource-card button,
+form button {
+    border: none;
+    background: #5b4bdb;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.resource-card button:hover,
+form button:hover {
+    background: #4536b5;
+}
+
+
+/* ===== Planner ===== */
+
+#planner {
+    background: #eeeaff;
+}
+
+.tasks {
+    max-width: 500px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.tasks label {
+    display: block;
+    background: white;
+    padding: 16px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.tasks input {
+    margin-right: 12px;
+}
+
+
+/* ===== Goals ===== */
+
+.goals-container {
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.goals-container p {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ===== Tips ===== */
+
+#tips {
+    background: #eeeaff;
+}
+
+.tips-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.tips-container div {
+    background: white;
+    padding: 25px;
+    width: 280px;
+    border-radius: 12px;
+}
+
+.tips-container p {
+    color: #666;
+    margin-top: 8px;
+}
+
+
+/* ===== Contact ===== */
+
+form {
+    max-width: 550px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input,
+form textarea {
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+form textarea {
+    height: 130px;
+    resize: none;
+}
+
+
+/* ===== Footer ===== */
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* ===== Mobile Responsive ===== */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    section {
+        padding: 60px 5%;
+    }
+}
+/* ===== Task Input ===== */
+
+.task-input {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 600px;
+    margin: 30px auto 20px;
+}
+
+.task-input input {
+    flex: 1;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.task-input button {
+    border: none;
+    background: #5b4bdb;
+    color: white;
+    padding: 13px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.task-input button:hover {
+    background: #4536b5;
+}
+
+/* ===== Progress ===== */
+
+.progress-box {
+    max-width: 600px;
+    margin: 20px auto 30px;
+    text-align: left;
+}
+
+.progress-box p {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 12px;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#progressFill {
+    width: 0%;
+    height: 100%;
+    background: #5b4bdb;
+    transition: width 0.3s ease;
+}
+
+/* ===== Study Timer ===== */
+
+#timer {
+    background: #f8f9ff;
+}
+
+.timer-box {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+#timerDisplay {
+    font-size: 60px;
+    font-weight: bold;
+    color: #5b4bdb;
+    margin-bottom: 25px;
+}
+
+.timer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.timer-buttons button {
+    border: none;
+    background: #5b4bdb;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.timer-buttons button:hover {
+    background: #4536b5;
+}
+
+
+/* ===== Goals Input ===== */
+
+.goal-input {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 600px;
+    margin: 30px auto 20px;
+}
+
+.goal-input input {
+    flex: 1;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.goal-input button {
+    border: none;
+    background: #5b4bdb;
+    color: white;
+    padding: 13px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.goal-input button:hover {
+    background: #4536b5;
+}
+
+/* Goal Items */
+
+.goals-container label {
+    display: block;
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: left;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.goals-container label input {
+    margin-right: 12px;
+}

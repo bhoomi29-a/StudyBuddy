@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyBuddy | Student Productivity</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<header>
+    <nav>
+        <h2 class="logo">StudyBuddy</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#planner">Planner</a></li>
+            <li><a href="#timer">Timer</a></li>
+            <li><a href="#goals">Goals</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="small-title">WELCOME TO STUDYBUDDY</p>
+
+        <h1>
+            Study Smarter.<br>
+            Achieve More.
+        </h1>
+
+        <p>
+            Organize your studies, track your goals
+            and stay consistent every day.
+        </p>
+
+        <a href="#planner" class="btn">Start Studying</a>
+
+    </div>
+
+</section>
+
+
+<!-- Resources Section -->
+<section id="resources">
+
+    <h2>Study Resources</h2>
+
+    <p class="section-text">
+        Learn important subjects and improve your skills.
+    </p>
+
+    <div class="resource-container">
+
+        <div class="resource-card">
+            <h3>☕ Java</h3>
+            <p>Learn Java programming from basics.</p>
+            <button>Learn Now</button>
+        </div>
+
+        <div class="resource-card">
+            <h3>🧠 DSA</h3>
+            <p>Practice data structures and algorithms.</p>
+            <button>Learn Now</button>
+        </div>
+
+        <div class="resource-card">
+            <h3>💾 DBMS</h3>
+            <p>Understand databases and SQL concepts.</p>
+            <button>Learn Now</button>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Planner Section -->
+<section id="planner">
+    <h2>Today's Study Plan</h2>
+    <p class="section-text">Add your tasks and track your daily progress.</p>
+
+    <!-- Add Task -->
+    <div class="task-input">
+        <input type="text" id="taskInput" placeholder="Enter your study task">
+        <button id="addTaskBtn">Add Task</button>
+    </div>
+
+    <!-- Progress -->
+    <div class="progress-box">
+        <p>Today's Progress: <span id="progressText">0%</span></p>
+
+        <div class="progress-bar">
+            <div id="progressFill"></div>
+        </div>
+    </div>
+
+    <!-- Tasks -->
+    <div class="tasks" id="taskList">
+
+        <label>
+            <input type="checkbox">
+            Java - Arrays
+        </label>
+
+        <label>
+            <input type="checkbox">
+            DSA - Searching
+        </label>
+
+        <label>
+            <input type="checkbox">
+            College Assignment
+        </label>
+
+        <label>
+            <input type="checkbox">
+            30 Minutes Revision
+        </label>
+
+    </div>
+</section>
+
+<!-- Study Timer -->
+<section id="timer">
+    <h2>Study Timer</h2>
+    <p class="section-text">Focus for 25 minutes, then take a short break.</p>
+
+    <div class="timer-box">
+        <div id="timerDisplay">25:00</div>
+
+        <div class="timer-buttons">
+            <button id="startTimer">Start</button>
+            <button id="pauseTimer">Pause</button>
+            <button id="resetTimer">Reset</button>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Goals Section -->
+<section id="goals">
+    <h2>My Goals</h2>
+    <p class="section-text">Set your goals and track your progress.</p>
+
+    <div class="goal-input">
+        <input type="text" id="goalInput" placeholder="Enter your goal">
+        <button id="addGoalBtn">Add Goal</button>
+    </div>
+
+    <div class="goals-container" id="goalList">
+        <label>
+            <input type="checkbox">
+            Learn Java
+        </label>
+
+        <label>
+            <input type="checkbox">
+            Complete DSA Basics
+        </label>
+
+        <label>
+            <input type="checkbox">
+            Build 3 Projects
+        </label>
+
+        <label>
+            <input type="checkbox">
+            Prepare Resume
+        </label>
+
+        <label>
+            <input type="checkbox">
+            Practice Interviews
+        </label>
+    </div>
+</section>
+
+<!-- Tips Section -->
+<section id="tips">
+
+    <h2>Study Tips</h2>
+
+    <div class="tips-container">
+
+        <div>
+            <h3>📵 Avoid Distractions</h3>
+            <p>Keep your phone away while studying.</p>
+        </div>
+
+        <div>
+            <h3>⏳ Take Breaks</h3>
+            <p>Take short breaks to stay focused.</p>
+        </div>
+
+        <div>
+            <h3>📝 Practice</h3>
+            <p>Practice instead of only watching tutorials.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact">
+
+    <h2>Contact Us</h2>
+
+    <form>
+
+        <input type="text" placeholder="Your Name">
+
+        <input type="email" placeholder="Your Email">
+
+        <textarea placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+</section>
+
+
+<!-- Footer -->
+<footer>
+
+    <p>© 2026 StudyBuddy | Made for Students ❤️</p>
+
+</footer>
+
+
+<script src="style.js"></script>
+
+</body>
+
+</html>
